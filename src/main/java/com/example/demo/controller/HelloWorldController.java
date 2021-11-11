@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 	
 	@GetMapping("/sayhello")
-	//@RequestMapping(method=RequestMethod.GET, value = "/sayhello")
+	@RequestMapping(method=RequestMethod.GET, value = "/sayhello")
 	public String sayHello() {
 		return "hello world , I am your first API ..............";
 	}
